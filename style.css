@@ -1,0 +1,17 @@
+.image{
+    width: 100%;
+    height: 200px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main{
+    height: 100%;
+    width: 100vw;
+    /* background-color: rgb(10, 117, 78); */
+    background: rgb(71,173,125);
+
+    background: linear-gradient(167deg, rgba(173,71,85,0.7994047960981268) 21%, rgba(17,187,119,0.8341387580422794) 54%, rgba(17,187,119,0.8341387580422794) 57%);
+}

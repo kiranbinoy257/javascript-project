@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style1.css">
+</head>
+<body>
+    
+    <div class="container">
+        
+        <div id="thumbnail"></div>
+        <div id="title"></div>
+        <div id="price"></div>
+        <div id="brand"></div>
+        <div id="discountPercentage"></div> 
+        <div id="rating"></div>
+        <div id="a">price:</div>
+        <div id="b">brand:</div>  
+        <div id="c">discountPercentage:</div> 
+        <div id="d">rating:</div>  
+
+
+        </div>
+
+      
+    <script>
+        console.log(window.location.search);
+        const urlparams=new URLSearchParams(window.location.search)
+        const id=urlparams.get('id')
+        console.log(id)
+
+        fetch(`https://dummyjson.com/products/${id}`)
+        .then((res)=> res.json())
+        .then((data)=>{
+            console.log(data);
+            document.getElementById("thumbnail").innerHTML=`<img src=${data.thumbnail}></img>`
+            document.getElementById("title").innerHTML=data.title
+            document.getElementById("price").innerHTML=data.price
+            document.getElementById("brand").innerHTML=data.brand
+            document.getElementById("discountPercentage").innerHTML=data.discountPercentage
+            document.getElementById("rating").innerHTML=data.rating
+
+            
+            
+           
+        })
+       
+
+    </script>
+</body>
+</html>

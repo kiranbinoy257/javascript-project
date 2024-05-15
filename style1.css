@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: rgb(4, 91, 85);
+    background: linear-gradient(180deg, rgba(4, 76, 84, 0.799) 21%, rgba(17,187,119,0.8341387580422794) 45%);
+    background: linear-gradient(20deg, rgba(0,0,0,0.7994047960981268) 21%, rgba(17,187,119,0.8341387580422794) 54%, rgba(17,187,119,0.8341387580422794) 57%);
+    position: relative;
+}
+#thumbnail{
+    position: absolute;
+    height: 300px;
+    width: 350px;
+    border-radius: 10%;
+    left: 5%;
+    top: 10%;
+}
+#thumbnail img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#title{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 300%;
+
+}
+#price{
+    position: absolute;
+    border-radius: 10%;
+    left: 13%;
+    top: 55%;
+    font-size: 200%;
+    }
+ #brand{
+    position: absolute;
+    left: 13%;
+    top: 50%;
+    font-size: 200%;
+ }
+ #discountPercentage{
+    position: absolute;
+    left: 23%;
+    top: 60%;
+    font-size: 200%;
+    color: red;
+ }
+ #rating{
+    position: absolute;
+    left: 13%;
+    top: 65%;
+    font-size: 200%;
+    color:yellow;
+ }
+#a{
+    position: absolute;
+    border-radius: 10%;
+    left: 5%;
+    top: 55%;
+    font-size: 200%;
+
+}
+#b{
+    position: absolute;
+    border-radius: 10%;
+    left: 5%;
+    top: 50%;
+    font-size: 200%;
+
+}
+#c{
+    position: absolute;
+    border-radius: 10%;
+    left: 5%;
+    top: 60%;
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+
+}
+#d{
+    position: absolute;
+    border-radius: 10%;
+    left: 5%;
+    top: 65%;
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+}
